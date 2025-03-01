@@ -49,3 +49,20 @@ python manage.py runserver
 1. Dashboard
 
 ![Image](https://github.com/user-attachments/assets/4fb15590-a38a-4620-b8bd-e1d286d5b4ae)
+
+2. All Stores
+
+![Image](https://github.com/user-attachments/assets/ed5996c3-5342-4196-b8a9-0bb47e871586)
+
+3. Search By Category
+
+![Image](https://github.com/user-attachments/assets/61c0bd09-7947-4b71-a1ea-4397d8af25e3)
+
+4. Add To Cart
+
+![Image](https://github.com/user-attachments/assets/93e78069-59f2-46c7-99b0-b2a6898d9fdb)
+
+5. Order and Get an Order
+
+![Image](https://github.com/user-attachments/assets/1c8cca66-328c-464c-b9fd-cde7ae9df1e6)
+
