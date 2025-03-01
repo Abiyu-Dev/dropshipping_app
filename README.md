@@ -43,3 +43,9 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
+
+# Demo
+
+1. Dashboard
+
+![Image](https://github.com/user-attachments/assets/4fb15590-a38a-4620-b8bd-e1d286d5b4ae)
