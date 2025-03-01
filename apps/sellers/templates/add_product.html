@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Product {% endblock %}
+{%block style%}
+<style>
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  /* On mouse-over */
+  .btn:hover {background: #eee;}
+  
+  .success {color: green;}
+  .info {color: dodgerblue;}
+  .warning {color: orange;}
+  .danger {color: red;}
+  .default {color: black;}
+</style>
+
+{%endblock%}
+{% block content %}
+<h1>Add Product</h1>
+<form method="post" action="." enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <div class="field">
+        <div class="control">
+            <button class="button is-dark is-uppercase btn success">Post</button>
+
+        </div>
+    </div>
+</form> 
+
+{% endblock %}

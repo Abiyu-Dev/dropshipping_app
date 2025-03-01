@@ -1,0 +1,61 @@
+<!--<div class="column is-3 product-list-item">
+    <div class="box">
+        <figure class="image is-4by3 mb-4">
+            <img src="{{ product.get_thumbnail }}" alt="">
+        </figure>
+        <h2 class="subtitle">{{ product.price }}</h2>
+        <h3 class="price is-size-6 mb-5">${{ product.price }}</h3>
+
+        <hr>
+
+        <a href="{% url 'product' product.category.slug product.slug %}" class="button is-dark is-uppercase">View</a>
+    </div>
+</div>
+-->
+{%block style%}
+<style>
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 23vw;
+    max-width: 25vwpx;
+    height: 63vh;
+    max-height: 63vh;
+    margin: 10px;
+    float: left;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+</style>
+{%endblock%}
+<div class="card">
+    <div style="border-style: groove; height: 20vh; position: relative; background-image: url('{{ product.get_thumbnail }}'); background-size: auto 100%; background-repeat: no-repeat; background-position: center; margin-bottom: 20px;">
+        
+    </div>
+    <div>
+      <h1>{{ product.title }}</h1>
+      <p class="price">${{ product.price }}</p>
+      <p>{{ product.category }}</p>
+      <p><a href="{% url 'product' product.category.slug product.slug %}" class="button is-dark is-uppercase"><button>View</button></a></p>
+    </div>
+</div>
+

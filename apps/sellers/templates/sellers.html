@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Sellers | {% endblock %}
+{%block style%}
+<style>
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  /* On mouse-over */
+  .btn:hover {background: #eee;}
+  
+  .success {color: green;}
+  .info {color: dodgerblue;}
+  .warning {color: orange;}
+  .danger {color: red;}
+  .default {color: black;}
+</style>
+
+{%endblock%}
+{% block content %}
+    <div style="justify-content: center; text-align: center;">
+        <h1 class="title">Stores</h1>
+    </div>
+
+    <div class="columns is-multiline">
+        {% for seller in sellers %}
+            <div class="column is-3">
+                <div class="box">
+                    <h2 class="subtitle">{{ seller.name }}</h2>
+                    <a href="{% url 'seller' seller.id %}" style="text-decoration: none;" class="button is-dark is-uppercase"><button class='btn info'>View</button></a>
+                    <hr>
+
+                    
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
